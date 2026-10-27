@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  color: #1f2937;
+  background: #f3f4f6;
+  font-family: system-ui, sans-serif;
+}
+
+.card {
+  width: min(100%, 32rem);
+  padding: 2rem;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 8%);
+  text-align: center;
+}
+
+button {
+  padding: 0.7rem 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  color: #fff;
+  background: #2563eb;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 3px;
+}
+
+body.dark-mode {
+    background: #111827;
+    color: #f9fafb;
+}
+
+body.dark-mode .card {
+    background: #1f2937;
+    color: #f9fafb;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background: #374151;
+    color: #fff;
+    border: 1px solid #6b7280;
+}
+
+body.dark-mode button {
+    background: #4b5563;
+    color: #fff;
+}
+
+body.dark-mode button:hover {
+    background: #6b7280;
+}
+
+body.dark-mode li {
+    color: #fff;
+}
